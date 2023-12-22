@@ -13,12 +13,7 @@ phases:
     commands:
       #- echo Configuring AWS CLI
       # Use existing AWS IAM user credentials
-      #- CLI_CREDENTIALS=$(aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:ap-south-1:469553588024:secret:aws-cli-user-keys-KVVEvt --region ap-south-1 --output json | jq -r '.SecretString')
-      #- AWS_ACCESS_KEY_ID=$(echo "$CLI_CREDENTIALS" | jq -r '.ACCESS_KEY')
-      #- AWS_SECRET_ACCESS_KEY=$(echo "$CLI_CREDENTIALS" | jq -r '.SECRET_KEY')
-      # Configure AWS CLI
-      #- aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-      #- aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+      
 
   build:
     commands:
